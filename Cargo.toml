@@ -1,0 +1,9 @@
+[package]
+name = "async-event-loop"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+priority-queue = "2.7.0"
+rquickjs = { version = "0.12.1", features = ["loader", "dyn-load", "futures", "phf"] }
+tokio = { version = "1.53.1", features = ["full"] }
