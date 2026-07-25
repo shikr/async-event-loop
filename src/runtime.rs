@@ -69,7 +69,7 @@ impl Runtime {
         Ok(this)
     }
 
-    pub fn run(&mut self) -> Result<()> {
+    pub fn run(&self) -> Result<()> {
         loop {
             match self.runtime.block_on(async {
                 match self.qruntime.execute_pending_job().await {
